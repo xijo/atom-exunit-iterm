@@ -1,0 +1,6 @@
+{
+  "atom-text-editor[data-grammar='source elixir']": {
+    "cmd-m": "exunit-iterm:run-all",
+    "alt-cmd-m": "exunit-iterm:run-by-line"
+  }
+}

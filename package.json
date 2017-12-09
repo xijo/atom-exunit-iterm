@@ -1,0 +1,41 @@
+{
+  "name": "exunit-iterm",
+  "main": "./lib/exunit-iterm",
+  "version": "0.0.1",
+  "description": "Relay exunit commands to iterm2",
+  "keywords": [],
+  "activationCommands": {
+    "atom-workspace": [
+      "exunit-iterm:run-all",
+      "exunit-iterm:run-by-line"
+    ]
+  },
+  "repository": "https://github.com/xijo/atom-exunit-iterm",
+  "license": "WTFPL",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "node-osascript": "1.0.2"
+  },
+  "configSchema": {
+    "exunitCommand": {
+      "title": "exunit command",
+      "description": "Define the exunit command options to be used",
+      "type": [
+        "string"
+      ],
+      "default": "mix test",
+      "order": 1
+    },
+    "inBackground": {
+      "title": "Start in background?",
+      "description": "Decide whether to switch to iterm2 or stay in atom when exunit is triggered",
+      "type": [
+        "boolean"
+      ],
+      "default": false,
+      "order": 2
+    }
+  }
+}
